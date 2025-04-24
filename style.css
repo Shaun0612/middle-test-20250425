@@ -1,0 +1,91 @@
+/* 全局樣式 */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* 背景動畫 */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2; /* 最底層 */
+  pointer-events: none; /* 禁止鼠標事件，確保不影響其他層 */
+}
+
+/* 選單樣式 */
+#menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(81, 129, 167, 0.8);
+  color: white;
+  overflow: hidden;
+  transition: left 0.3s ease;
+  z-index: 2; /* 第二層 */
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+#menu li:hover {
+  background-color: rgba(10, 60, 134, 0.616);
+}
+
+#submenu {
+  display: none;
+  padding-left: 20px;
+}
+
+#submenu li {
+  padding: 10px;
+}
+
+/* iframe 樣式 */
+iframe {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  border: none;
+  display: none; /* 默認隱藏 */
+  z-index: 1;
+  background-color: black; /* 添加背景色，避免空白區域 */
+}
+
+#iframeContainer {
+  position: relative;
+}
+
+#iframeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* 高於 iframe */
+  background: transparent; /* 透明背景 */
+  pointer-events: none; /* 允許滑鼠事件穿透 */
+}
+
+/* p5.js 繪製的角色動畫 */
+.p5Canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3; /* 最上層 */
+  pointer-events: none; /* 禁止鼠標事件，確保不影響其他層 */
+}

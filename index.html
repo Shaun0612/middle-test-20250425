@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>駭客任務背景動畫與選單</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- 添加 favicon -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+  <!-- 選單 -->
+  <div id="menu">
+    <ul>
+      <li id="home">首頁</li>
+      <li id="about">自我介紹</li>
+      <li id="portfolio">作品集
+        <ul id="submenu">
+          <li data-url="https://shaun0612.github.io/1230project/">大一上期末</li>
+          <li data-url="https://shaun0612.github.io/20250307/">三月七</li>
+          <li data-url="https://shaun0612.github.io/20253.14/">π</li>
+          <li data-url="https://shaun0612.github.io/20250328/">3.28</li>
+          <li data-url="https://hackmd.io/@Shaunxuan/HJQbfKUyle">hackMD期中報告</li>
+        </ul>
+      </li>
+      <li id="quiz">測驗卷（本身有BUG）</li>
+      <li id="tutorial">教學影片</li>
+      <li id="toggleCharacter">Mon3tr（顯示/隱藏）</li>
+      <li id="toggleCharacter">Mon3tr沒辦法停留在iframe上，想讓她醒來就戳她一下，她會跟著你的滑鼠，一段時間不動，她就會睡着</li>
+    </ul>
+  </div>
+
+  <!-- 嵌入的 iframe -->
+  <iframe id="contentFrame"></iframe>
+
+  <!-- 背景動畫 -->
+  <script src="sketch.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
