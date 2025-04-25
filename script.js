@@ -79,7 +79,7 @@ const quizMenuItem = document.getElementById('quiz');
 quizMenuItem.addEventListener('click', () => {
   // 設置 iframe 顯示測驗卷頁面
   iframe.style.display = 'block';
-  iframe.src = 'https://shaun0612.github.io/test0425/';
+  iframe.src = 'https://shaun0612.github.io/introduce-myself20250425/';
 });
 
 const tutorialMenuItem = document.getElementById('tutorial');
